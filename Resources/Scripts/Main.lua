@@ -201,7 +201,7 @@ end
 --// Reload On Teleport
 
 if Environment.Settings.ReloadOnTeleport then
-    if syn.queue_on_teleport then
+    if syn and syn.queue_on_teleport then
         syn.queue_on_teleport(game:HttpGet("https://pastebin.com/raw/4L7an7MY"))
     else
         SendNotification(Title, "Your exploit does not support \"syn.queue_on_teleport()\"")
